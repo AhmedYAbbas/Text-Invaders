@@ -1,6 +1,10 @@
 # Text Invaders
 
-Welcome to the repository for Text Invaders, ​a classic text-based space invaders game written entirely in C++ using PDCurses.
+A classic text-based space invaders game written entirely in C++ using PDCurses.
+
+[![Watch the video](https://img.youtube.com/vi/ZvpUCR_2UOI/hqdefault.jpg)](https://www.youtube.com/embed/ZvpUCR_2UOI)
+
+***
 
 ## Building the Project
 The project only supports x86 Windows for now!
@@ -10,6 +14,8 @@ The project only supports x86 Windows for now!
 4. Extract `pdcurses.zip` and copy `pdcurses.dll` from the extracted folder.
 5. Navigate to the `bin/Win32/Your-Configuration/` folder and paste the dll.
 6. Open `Space Invaders.sln` and hit `F5` again.
+
+***
 
 ## Features
 
@@ -25,4 +31,3 @@ The project only supports x86 Windows for now!
 10. Intro, gameplay, gameover, and highscore screens.
 11. Highscore leaderboard. (save/load system).
 12. etc...
-
