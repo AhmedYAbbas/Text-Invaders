@@ -2,7 +2,7 @@
 
 A classic text-based space invaders game written entirely in C++ using PDCurses.
 
-[![Watch the video](https://img.youtube.com/vi/ZvpUCR_2UOI/hqdefault.jpg)](https://www.youtube.com/embed/ZvpUCR_2UOI)
+[![Watch the video](https://img.youtube.com/vi/FG-AP8WulY4/hqdefault.jpg)](https://www.youtube.com/embed/FG-AP8WulY4)
 
 ***
 
