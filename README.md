@@ -1,33 +1,51 @@
 # Text Invaders
 
-A classic text-based space invaders game written entirely in C++ using PDCurses.
+A Space Invaders clone that runs entirely in the terminal, written in C++ with [PDCurses](https://pdcurses.org/).
 
-[![Watch the video](https://img.youtube.com/vi/FG-AP8WulY4/hqdefault.jpg)](https://www.youtube.com/embed/FG-AP8WulY4)
-
-***
-
-## Building the Project
-The project only supports x86 Windows for now!
-1. Clone the repository.
-2. Open `Space Invaders.sln` and make sure the platform is `x86` then hit `F5`.
-3. An error will appear that `pdcurses.dll` is missing.
-4. Extract `pdcurses.zip` and copy `pdcurses.dll` from the extracted folder.
-5. Navigate to the `bin/Win32/Your-Configuration/` folder and paste the dll.
-6. Open `Space Invaders.sln` and hit `F5` again.
+[![Watch the gameplay video](https://img.youtube.com/vi/FG-AP8WulY4/hqdefault.jpg)](https://www.youtube.com/embed/FG-AP8WulY4)
 
 ***
 
 ## Features
 
-1. Aliens in different rows have different scores.
-2. Mystery UFO.
-3. Destructable shields.
-4. Aliens move sideways and when they hit the sides they move one row down.
-5. Aliens move faster when destroyed or each time they move downwards.
-6. Each level, aliens start one row lower than the previous level.
-7. If the aliens reach the bottom of the screen, the game ends.
-8. Aliens drop bombs (max 3 bombs), and the player could only 1 missile at a time (they do not collide).
-9. Player and aliens animations.
-10. Intro, gameplay, gameover, and highscore screens.
-11. Highscore leaderboard. (save/load system).
-12. etc...
+- Alien rows worth different point values, plus a mystery UFO for bonus points
+- Destructible shields that erode as they take fire
+- Aliens sweep side to side, drop a row on hitting a wall, and speed up as they're destroyed
+- Each new level starts the alien formation one row lower than the last
+- Game ends if the aliens reach the bottom of the screen
+- Aliens drop up to 3 bombs at once; the player fires one missile at a time
+- Sprite-based animations for the player and aliens
+- Intro, gameplay, game over, and high score screens
+- Persistent high score leaderboard (save/load to file)
+
+***
+
+## Controls
+
+| Key | Action |
+| --- | --- |
+| `←` / `→` | Move the player / navigate menus |
+| `Space` | Shoot / confirm |
+| `S` | View high scores (from the intro screen) |
+| `Q` | Quit |
+
+***
+
+## Building the Project
+
+> **Note:** Currently Windows (x86) only, built with Visual Studio.
+
+1. Clone the repository.
+2. Open `Space Invaders.sln` in Visual Studio, making sure the platform is set to `x86`, then press `F5`.
+3. The build will fail to run because `pdcurses.dll` is missing.
+4. Extract `pdcurses.zip` and copy `pdcurses.dll` from the extracted folder.
+5. Paste it into `bin/Win32/<Your-Configuration>/`.
+6. Press `F5` again to build and run.
+
+***
+
+## Tech Stack
+
+- **Language:** C++
+- **Rendering:** [PDCurses](https://pdcurses.org/) (terminal/console UI)
+- **Build system:** Visual Studio solution (`.sln` / `.vcxproj`)
